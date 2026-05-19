@@ -15,9 +15,9 @@ export default function Footer() {
         <div>
 
           <img
-            src="/images/logo.png"
+            src="/images/logo2.png"
             alt="RoyalSun"
-            className="h-16 mb-6"
+            className="h-40 mb-6"
           />
 
           <p className="text-gray-400 leading-8">
