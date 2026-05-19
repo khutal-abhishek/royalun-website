@@ -24,7 +24,11 @@ const products = [
 export default function Products() {
 
   return (
-    <section className="relative bg-[#050505] py-24 overflow-hidden" id="products">
+
+    <section
+      className="relative bg-[#050505] py-24 overflow-hidden"
+      id="products"
+    >
 
       {/* Glow */}
       <div className="absolute right-0 bottom-0 w-[400px] h-[400px] bg-yellow-500/10 blur-[140px] rounded-full"></div>
@@ -32,7 +36,10 @@ export default function Products() {
       <div className="relative z-10 max-w-7xl mx-auto px-6">
 
         {/* Heading */}
-        <div className="text-center mb-16">
+        <div
+          className="text-center mb-16"
+          data-aos="fade-up"
+        >
 
           <p className="text-yellow-400 uppercase tracking-[4px] text-sm mb-4">
             Our Collection
@@ -56,19 +63,41 @@ export default function Products() {
 
             <div
               key={index}
+
+              data-aos="zoom-in"
+              data-aos-delay={index * 150}
+
               className="
                 group
+                relative
+
                 bg-black/60
+
                 border
                 border-yellow-500/10
+
                 rounded-3xl
                 overflow-hidden
+
                 hover:border-yellow-400
-                transition
+
+                transition-all
                 duration-500
-                hover:-translate-y-2
+
+                hover:-translate-y-3
+                hover:shadow-[0_0_40px_rgba(255,196,0,0.15)]
               "
             >
+
+              {/* Card Glow */}
+              <div className="
+                absolute
+                inset-0
+                bg-yellow-500/0
+                group-hover:bg-yellow-500/5
+                transition
+                duration-500
+              "></div>
 
               {/* Image */}
               <div className="relative overflow-hidden">
@@ -79,18 +108,21 @@ export default function Products() {
                   className="
                     w-full
                     h-[300px]
+
                     object-contain
+
                     bg-black
-                    group-hover:scale-105
-                    transition
-                    duration-500
+
+                    group-hover:scale-110
+                    transition-transform
+                    duration-700
                   "
                 />
 
               </div>
 
               {/* Content */}
-              <div className="p-6">
+              <div className="relative z-10 p-6">
 
                 <h3 className="text-2xl font-bold text-yellow-400 mb-4">
                   {product.name}
@@ -106,14 +138,23 @@ export default function Products() {
                   className="
                     mt-6
                     inline-block
+
                     bg-yellow-500
                     hover:bg-yellow-400
+
                     text-black
+
                     px-6
                     py-3
+
                     rounded-lg
+
                     font-semibold
-                    transition
+
+                    transition-all
+                    duration-300
+
+                    hover:scale-105
                   "
                 >
                   Order Now
@@ -130,5 +171,6 @@ export default function Products() {
       </div>
 
     </section>
+
   );
 }
