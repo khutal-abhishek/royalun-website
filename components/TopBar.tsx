@@ -70,18 +70,18 @@ export default function TopBar() {
 
           <div className="flex items-center gap-1">
             <MdEmail className="text-yellow-400" />
-            <span>royalunindia@gmail.com</span>
+            <span>royalSunindia@gmail.com</span>
           </div>
 
           <a
-            href="#"
+            href="https://www.instagram.com/royal.sun007/"
             className="text-yellow-400 text-lg hover:scale-110 transition"
           >
             <FaFacebookF />
           </a>
 
           <a
-            href="#"
+            href="https://www.instagram.com/royal.sun007/"
             className="text-yellow-400 text-lg hover:scale-110 transition"
           >
             <FaInstagram />

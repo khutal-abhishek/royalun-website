@@ -71,7 +71,7 @@ export default function Footer() {
 
             <p>+91 7083412780</p>
 
-            <p>royalunindia@gmail.com</p>
+            <p>royalSunindia@gmail.com</p>
 
             <p>Pune, Maharashtra</p>
 
