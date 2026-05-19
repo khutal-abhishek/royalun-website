@@ -81,7 +81,7 @@ export default function Footer() {
           <div className="flex gap-4 mt-8">
 
             <a
-              href="#"
+              href="https://www.instagram.com/royal.sun007/"
               className="
                 bg-yellow-500
                 hover:bg-yellow-400
@@ -95,7 +95,7 @@ export default function Footer() {
             </a>
 
             <a
-              href="#"
+              href="https://www.instagram.com/royal.sun007/"
               className="
                 bg-yellow-500
                 hover:bg-yellow-400
